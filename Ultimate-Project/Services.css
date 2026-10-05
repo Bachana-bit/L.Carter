@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f4f3e8;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  font-family: "Poppins", sans-serif;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  background-color: #f4f3e8;
+  color: #1e3f22;
+  padding: 10px 30px;
+  font-size: 13px;
+  cursor: pointer;
+  animation: hedunia 4s;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+}
+header h1 {
+  font-weight: 200;
+  font-size: 18px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #1e3f22;
+}
+
+header i {
+  font-size: 30px;
+}
+
+@keyframes hedunia {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+main {
+  height: 160vh;
+  display: flex;
+  width: 100%;
+}
+
+.FirstOne {
+  background-color: #1e3f22;
+  color: white;
+  width: 50%;
+  align-items: start;
+  padding: 150px 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 21px;
+}
+
+.FirstOne div {
+  width: 440px;
+}
+
+.SecondOne{
+  width: 50%;
+  background-color: #f4f3e8;
+}
+
+.container {
+  max-width: 620px;
+  margin: 110px auto;
+  padding: 60px 40px;
+  background-color: #f4f3e8;
+}
+
+.intro-text {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 80px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.class-item {
+  border-top: 1px solid #c4b8a0;
+  padding: 50px 0;
+}
+
+.class-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.class-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #3a3a3a;
+}
+
+.class-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #3a3a3a;
+}
+
+.class-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #3a3a3a;
+  margin-left: 50%;
+  padding-left: 20px;
+}
+
+
+footer {
+  margin-top: 70px;
+  width: 100%;
+  color: #1e3f22;
+  display: flex;
+  justify-content: space-between;
+  height: 30vh;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #f4f3e8;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.GreenLine {
+  width: 180px;
+  height: 1px;
+  background-color: #1e3f22;
+  margin-left: 27px;
+}
+
+.FooterTitle {
+  margin-bottom: 150px;
+}
+
+.WabiSabi {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Checkbox {
+  display: flex;
+  gap: 10px;
+}
+
+.FooterEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FooterEmail input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #1e3f22;
+  width: 270px;
+}
+
+.Left {
+  margin-left: -3px;
+}
+
+.WabiSabi button {
+  width: 280px;
+  margin-left: -3px;
+  height: 40px; 
+  background-color: #1e3f22;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.FooterEmail input:focus{
+    outline: none;
+
+}
+
+.WabiSabi button:hover {
+  border: 1px solid #1e3f22;
+  background-color: transparent;
+  color: #1e3f22;
+}
+.MobileImg{
+  display: none;
+}
+
+.BurgerMenu{
+  display: none;
+}
+
+
+@media(max-width: 768px){
+   *{
+    scrollbar-width: none;
+  }
+
+   header nav{
+    display: none;
+   }
+   header{
+    padding: 30px;
+    position: none;
+    color: #1e3f22;
+    animation: none;
+    display: flex;
+    justify-content: space-between;
+    
+   }
+   .BurgerMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+   }
+   .BurgerMenu div{
+    height: 2px;
+    width: 25px;
+    background-color: black;
+   }
+
+   main{
+    flex-direction: column;
+   }
+   .FirstOne{
+    width: 100%;
+    height: fit-content;
+   }
+   .FirstOne div{
+    width: 410px;
+   }
+   .SecondOne{
+    width: 100%;
+   }
+   
+    footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+    width: 768px;
+    align-items: flex-start;
+    background-color: #f4f3e8;
+    color: #1e3f22;
+    margin-top: 350px;
+    
+   
+  
+  }
+  .FooterTitle{
+    margin-bottom: 20px;
+  }
+  .GreenLine{
+    margin-left: -3px;
+  }
+  .WabiSabi{
+    margin-top: 100px;
+  }
+
+  
+   
+}

@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.About {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(120, minmax(20px, auto));
+  background-color: #f4f3e8;
+  gap: 6px;
+}
+
+header {
+  grid-column: 1 / 25;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  font-family: "Poppins", sans-serif;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  background-color: #f4f3e8;
+  color: #1e3f22;
+  padding: 10px 30px;
+  font-size: 13px;
+  cursor: pointer;
+  animation: hedunia 4s;
+}
+
+header h1 {
+  font-weight: 200;
+  font-size: 18px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #1e3f22;
+}
+
+header i {
+  font-size: 30px;
+}
+
+
+@keyframes hedunia {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+section {
+  display: flex;
+  grid-column: 1 / 25;
+  grid-row: 2 / 24;
+  margin-top: 50px;
+  padding: 0px 10px;
+
+}
+.Just-For-Photo{
+    width: 50%;
+    height: 700px;
+}
+.Just-For-Photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.OurStudio{
+    flex-direction: column;
+    display: flex;
+    gap: 300px;
+    text-align: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    width: 50%;
+}
+
+.Line{
+    width: 500px;
+    height: 1px;
+    background-color: black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.greenText{
+    color: #1e3f22;
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+
+aside {
+  text-align: center;
+  grid-column: 1 / 25;
+  grid-row: 25 / 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  text-align: start;
+  color: #1e3f22;
+}
+
+.Left-Side{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    gap: 40px;
+}
+
+.Right-Side{
+     display: flex;
+    flex-direction: column;
+    width: 23%;
+    gap: 40px;
+}
+
+
+
+footer {
+  margin-top: 70px;
+  width: 100%;
+  color: #1e3f22;
+  display: flex;
+  justify-content: space-between;
+  height: 30vh;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  grid-column: 1 / 25;
+  grid-row: 101 / 121;
+  text-align: start;
+  
+
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.GreenLine {
+  width: 192px;
+  height: 1px;
+  background-color: #1e3f22;
+  
+}
+
+.FooterTitle {
+  margin-bottom: 260px;
+}
+
+.WabiSabi {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Checkbox {
+  display: flex;
+  gap: 10px;
+}
+
+.FooterEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FooterEmail input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #1e3f22;
+  width: 325px;
+}
+
+.FooterEmail input:focus{
+    outline: none;
+
+}
+
+.Left {
+  margin-left: -3px;
+}
+
+.WabiSabi button {
+  width: 280px;
+  margin-left: -3px;
+  height: 40px; 
+  background-color: #1e3f22;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.WabiSabi button:hover {
+  border: 1px solid #1e3f22;
+  background-color: transparent;
+  color: #1e3f22;
+}
+
+.Mobile{
+  display: none;
+}
+
+
+
+@media(max-width: 768px){
+  *{
+    scrollbar-width: none;
+  }
+  header{
+    animation: none;
+  }
+
+  header nav{
+    display: none;
+  }
+  .Mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .Mobile div{
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    cursor: pointer;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .Just-For-Photo{
+    width: 100%;
+  
+  }
+  .Just-For-Photo img{
+    width: 100%;
+  }
+  .OurStudio{
+    gap: 10px;
+  }
+  .greenText{
+    margin-top: 25px;
+  }
+  aside{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+  }
+  .Left-Side{
+    width: 60%;
+  }
+  .Left-Side div{
+    width: 100%;
+  }
+  .Right-Side{
+    width: 60%;
+  }
+  .Right-Side div{
+    width: 100%;
+  }
+  footer{
+       display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+    width: 768px;
+    align-items: flex-start;
+    background-color: #f4f3e8;
+    color: #1e3f22;
+    margin: 0px;
+
+  }
+  .FooterTitle{
+    margin-bottom: 10px;
+  }
+}
